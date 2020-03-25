@@ -1,0 +1,16 @@
+---
+layout: theme/layout
+---
+<section class="resume-section p-3 p-lg-5 d-flex flex-column">
+	<article class="post">	
+	  	<h2>{{ page.title }}</h2>
+	  	<div class="entry">
+	    	{{ content }}
+	  	</div>
+	  	<hr>
+	  	<div class="date">
+	    	Written on {{ page.date | date: "%B %e, %Y" }}
+	  	</div>
+	  	{% include disqus.html %}		
+	</article>
+</section>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Inicio | VePay Documentación
+    </title>
+    {% include meta.html %}
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    {% include components/stylesheet.html %}    
+  </head>
+  <body class="landing-page">
+    <div class="page-wrapper"> 
+        <header class="header text-center">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                        <span class="text-highlight">{{site.name}}</span><span class="text-bold">Docs</span>
+                    </h1>
+                </div>
+                <div class="tagline">
+                    <p>Desarrollado con <i class="fas fa-heart"></i> en Venezuela</p>
+                </div>
+                <div class="social-container">
+                  <div class="github-btn mb-2">
+                        <a class="github-button" href="https://github.com/vepay-dev/vepay-dev.github.io" data-size="large" aria-label="Star vepaydocs on GitHub">Star</a>
+                        <a class="github-button" href="https://github.com/vepay-dev" data-size="large" aria-label="Follow @vepay-dev on GitHub">Follow @vepay-dev</a>
+                  </div>
+                 </div>
+            </div>
+        </header> 
+      {{ content }}
+    </div>    
+    {% include footer.html %}    
+    {% include components/scripts.html %}
+  </body>
+</html>

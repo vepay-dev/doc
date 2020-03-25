@@ -1,0 +1,39 @@
+---
+layout: theme/layout
+---
+
+<div class="doc-wrapper">
+  <div class="container">
+    <div id="doc-header" class="doc-header text-center">
+        <h1 class="doc-title"><span aria-hidden="true" class="icon icon_lifesaver"></span> FAQs</h1>
+        <div class="meta"><i class="far fa-clock"></i> Ultima actualización: Febrero 23, 2019</div>
+    </div>
+    <div class="doc-body row">
+      <div class="doc-content col-md-9 col-12 order-1">
+        <div class="content-inner">
+          <section id="general" class="doc-section">
+            <h2 class="section-title">General</h2>
+            {% for post in site.faqs %}
+              <div class="section-block">
+                <h3 class="question">
+                  <i class="fas fa-question-circle"></i> 
+                  {{ post.title }}
+                </h2>
+                <div class="entry">
+                  {{ post.content }}
+                </div>
+              </div>
+            {% endfor %}
+          </section>
+        </div>
+      </div>
+      <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+          <div id="doc-nav" class="doc-nav">
+              <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                  <a class="nav-link scrollto" href="#general">General</a>
+              </nav>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
